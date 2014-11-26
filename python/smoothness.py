@@ -52,8 +52,8 @@ def spectral_arclength(movement, fs, padlevel=4, fc=10.0, amp_th=0.05):
     >>> t = np.arange(-1, 1, 0.01)
     >>> move = np.exp(-5*pow(t, 2))
     >>> sal, _, _ = spectral_arclength(move, fs=100.)
-    >>> sal
-    -1.41403126171
+    >>> '%.5f' % sal
+    '-1.41403'
 
     """
     # Number of zeros to be padded.
@@ -113,8 +113,8 @@ def dimensionless_jerk(movement, fs):
     >>> t = np.arange(-1, 1, 0.01)
     >>> move = np.exp(-5*pow(t, 2))
     >>> dl = dimensionless_jerk(move, fs=100.)
-    >>> dl
-    -335.746837033
+    >>> '%.5f' % dl
+    '-335.74684'
 
     """
     # first enforce data into an numpy array.
@@ -157,8 +157,8 @@ def log_dimensionless_jerk(movement, fs):
     >>> t = np.arange(-1, 1, 0.01)
     >>> move = np.exp(-5*pow(t, 2))
     >>> ldl = log_dimensionless_jerk(move, fs=100.)
-    >>> ldl
-    -5.81635741476
+    >>> '%.5f' % ldl
+    '-5.81636'
 
     """
     return -np.log(abs(dimensionless_jerk(movement, fs)))
