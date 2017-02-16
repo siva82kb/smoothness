@@ -8,7 +8,7 @@ function S = SpectralArcLength( speed, Ts, parameters )
 %         The function assumes that the movement speed profile is already
 %         filtered and segemented.
 %
-%         TS*: Sampling time in seconds. (DEFAULT VALUE = 100Hz) NOTE: IF
+%         TS*: Sampling time in seconds. (DEFAULT VALUE = 0.01sec) NOTE: IF
 %         YOUR DATA WAS NOT SAMPLED AT 100HZ, YOU MUST ENTER THE
 %         APPROPRIATE SAMPLING TIME FOR ACCURATE RESULTS.
 %
