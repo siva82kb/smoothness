@@ -1,6 +1,8 @@
 smoothness
 ==========
 
+The new version of the SPARC can be found here: https://github.com/siva82kb/SPARC
+
 This repository contains the functions for calculating movement smoothness using different metrics.
 
 
